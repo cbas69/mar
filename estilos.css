@@ -31,7 +31,7 @@ body {
     position:absolute;
     width: 240px;
     height: 15px;
-    bottom: 405px;
+    bottom: 395px;
     background-color: #c0c0c0;
     clip-path: polygon(5px 0px, 235px 0px, 0px 1800px, 240px 1800px);
 }
@@ -50,8 +50,8 @@ body {
     position: absolute;
     width: 60px;
     height: 69px;
-    right: 50%;
-    top: 24.5%;
+    right: 52%;
+    top: 25.5%;
     background-color: #dcd6f7;
     z-index: 2;
 }
