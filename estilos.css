@@ -118,9 +118,9 @@ p {
 }
 
 #lov{
-  width: 90px;
-  height: 90px;
+  width: 120px;
+  height: 120px;
   position: relative;
-  top: -20%;
+  top: 50%;
   right: 50%;
 }
