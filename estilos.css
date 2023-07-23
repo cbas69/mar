@@ -1,0 +1,134 @@
+body {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    cursor: pointer;
+}
+
+.caja-regalo {
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    z-index: -1;
+    background-color: #f7f1e3;
+    clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 10% 100%);
+}
+
+.tapa {
+    position: relative;
+    width: 260px;
+    height: 64px;
+    top: -100px;
+    left: 30px;
+    z-index: 1; 
+    background-color: #f7f1e3;
+}
+
+.sombra-caja{
+    position:absolute;
+    width: 240px;
+    height: 15px;
+    bottom: 377px;
+    background-color: #c0c0c0;
+    clip-path: polygon(5px 0px, 235px 0px, 0px 1800px, 240px 1800px);
+}
+
+.liston-caja {
+    position: relative;
+    width: 60px;
+    height: 187px;
+    right: 130px; 
+    top: 28px; 
+    background-color: #dcd6f7;
+    z-index: 2;
+}
+
+.liston-superior{
+    position: absolute;
+    width: 60px;
+    height: 69px;
+    right: 47.8%;
+    top: 29.6%;
+    background-color: #dcd6f7;
+    z-index: 2;
+}
+
+.fondo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #f7d9e3;
+    z-index: -2;
+    transform: scale(.1);
+}
+
+.contenedor {
+    position: relative;
+}
+
+.regalo-abierto .tapa,
+.regalo-abierto .liston-superior,
+.regalo-abierto .sombra-caja {
+    animation: moverArriba 1s forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes moverArriba {
+    to {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+.fondo-saliendo .fondo {
+    animation: aparecerfondo 2s forwards;
+    animation-delay: 1s;
+}
+
+@keyframes aparecerfondo {
+    0% {
+        transform: translateY(0%) scale(0);
+    }
+    10%{
+        transform: translateY(-10%) scale(0.1);
+    }
+    20%{
+        transform: translateY(-20%) scale(0.2);
+    }
+    30%{
+        transform: translateY(-45%) scale(0.3);
+        z-index: 3;
+    }
+    40%{
+        transform: translateY(-20%) scale(0.4);
+    }
+    50% {
+        transform: translateY(-10%) scale(0.5);
+        z-index: 3;
+    }
+    100% {
+        transform: translateY(0%) scale(1);
+        z-index: 3;
+    }
+}
+
+h1 {
+    color: #564f5f ;
+    font-size: 36px;
+    font-family: 'Amatic SC';
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+    font-family: 'nanito';
+}
+
+.tamo{
+    font-size: 23px;
+    font-family: 'Love Ya Like A Sister';
+    text-align: justify;
+}
