@@ -121,6 +121,6 @@ p {
   width: 120px;
   height: 120px;
   position: relative;
-  top: 50%;
-  right: 420px;
+  top: -40%;
+  left: 420px;
 }
