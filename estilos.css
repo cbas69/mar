@@ -31,7 +31,7 @@ body {
     position:absolute;
     width: 240px;
     height: 15px;
-    bottom: 377px;
+    bottom: 429px;
     background-color: #c0c0c0;
     clip-path: polygon(5px 0px, 235px 0px, 0px 1800px, 240px 1800px);
 }
@@ -50,8 +50,8 @@ body {
     position: absolute;
     width: 60px;
     height: 69px;
-    right: 47.8%;
-    top: 29.6%;
+    right: 42.5%;
+    top: 32%;
     background-color: #dcd6f7;
     z-index: 2;
 }
@@ -63,6 +63,7 @@ body {
     background-color: #f7d9e3;
     z-index: -2;
     transform: scale(.1);
+    padding: 30px;
 }
 
 .contenedor {
@@ -131,4 +132,12 @@ p {
     font-size: 23px;
     font-family: 'Love Ya Like A Sister';
     text-align: justify;
+}
+
+#lov{
+  width: 90px;
+  height: 90px;
+  position: relative;
+  top: -100px;
+  right: -190px;
 }
